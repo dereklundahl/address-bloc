@@ -31,6 +31,8 @@ module.exports = class MenuController {
           break;
         case "Exit":
           this.exit();
+        case "Remind me":
+          this.remindMe();
         default:
           console.log("Invalid input");
           this.main();
@@ -64,6 +66,11 @@ module.exports = class MenuController {
     this.clear();
     console.log(dateFormat(now));
     this.main();
+  }
+
+  remindMe() {
+    var message = "Learning is a life-long pursuit";
+    return message;
   }
 
 }
