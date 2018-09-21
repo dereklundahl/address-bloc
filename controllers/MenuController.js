@@ -12,6 +12,7 @@ module.exports = class MenuController {
         choices: [
           "Add new contact",
           "Get date",
+          "Remind me",
           "Exit"
         ]
       }
@@ -70,6 +71,7 @@ module.exports = class MenuController {
 
   remindMe() {
     var message = "Learning is a life-long pursuit";
+    console.log(message);
     return message;
   }
 
