@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 var dateFormat = require('dateformat');
+const ContactController = require("./ContactController");
 var now = new Date();
 
 module.exports = class MenuController {
@@ -16,7 +17,7 @@ module.exports = class MenuController {
         ]
       }
     ];
-    this.contacts = [];
+    this.book = new ContactController();
   }
 
   main() {
